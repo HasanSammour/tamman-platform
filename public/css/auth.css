@@ -1,0 +1,100 @@
+/* public/css/auth.css */
+.auth-body {
+    background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auth-wrapper {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.auth-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-logo a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.auth-logo img {
+    height: 45px;
+    width: auto;
+}
+
+.auth-logo span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #7c3aed, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.auth-card {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.auth-footer-links {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.auth-footer-links a {
+    color: #6b7280;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.auth-footer-links a:hover {
+    color: #7c3aed;
+}
+
+.auth-footer-links .separator {
+    margin: 0 8px;
+}
+
+/* RTL Support */
+body.rtl .auth-card {
+    text-align: right;
+}
+
+@media (max-width: 576px) {
+    .auth-card {
+        padding: 25px;
+    }
+    
+    .auth-logo img {
+        height: 35px;
+    }
+    
+    .auth-logo span {
+        font-size: 1.2rem;
+    }
+}
