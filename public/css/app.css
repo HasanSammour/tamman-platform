@@ -239,7 +239,7 @@ a:hover {
 .navbar-menu {
     display: flex;
     align-items: center;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-sm);
     list-style: none;
     margin: 0;
     padding: 0;
@@ -248,13 +248,16 @@ a:hover {
 .navbar-menu li a {
     color: var(--gray-700);
     font-weight: 500;
-    transition: color var(--transition-fast);
-    padding: 8px 0;
+    padding: 10px 6px;  /* more comfortable click area */
+    border-radius: 40px;  /* pill shape looks modern */
+    transition: all 0.3s ease;
 }
 
 .navbar-menu li a:hover,
 .navbar-menu li a.active {
     color: var(--lavender-600);
+    margin:10px 10px;
+    background: linear-gradient(135deg, #f5f3ff, #ede9fe);
 }
 
 .navbar-actions {
